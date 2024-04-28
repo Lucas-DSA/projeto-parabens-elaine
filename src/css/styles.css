@@ -6,6 +6,7 @@ body {
     background: linear-gradient(45deg, rgb(158, 14, 168), rgb(5, 5, 18)); 
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
+    
 }
 
 header {
@@ -23,11 +24,11 @@ main {
     padding: 20px;
 }
 
-h1, h2, div, p{
+h1, h2, h3, div, p{
     color: rgb(255, 255, 255);
 }
 
-h1:hover, h2:hover, div:hover {
+h1:hover, h2:hover,h3:hover, div:hover {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     border-radius: 20%;
@@ -42,9 +43,10 @@ footer {
     color: white;
     height: auto;
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
     font-family: helvetica;
 }
+
 
 #album {
     margin-bottom: 20px;
@@ -86,7 +88,18 @@ footer {
     margin-bottom: 10px;
 }
 
+.nossas-fotos:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    border-radius: 20%;
+    display: center;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: solid 3px white;
+}
+
 .nos {
-    display: block;
     text-align: center;
+    margin: 10%;
 } 
