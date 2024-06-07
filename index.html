@@ -1,70 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniversário da Elaine</title>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Aniversário Elaine</title>
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho-h1">
         <h1>🎉 Feliz Aniversário, Vida! 🎂</h1>
     </header>
 
     <main>
-        <section id="album">
-            <!-- Aqui será inserido o álbum de fotos -->
-            <img src="src/imagens/vida capa.jpeg" alt="capa">
+        <section class="cabecalho-capa">
+            <img src="src/image/vida capa pequena.jpg" class="img-fluid" alt="capa">
         </section>
 
-        <section id="countdown">
+        <section class="site">
             <h2>Site em construção 🚧</h2>
-            <h3>O conteúdo será liberado na data do aniversário!</h3>
+            <h3 class="text-parabens">O conteúdo será liberado na data do aniversário!</h3>
             <hr>
             <h2>Aniversário em: 23/07/2024</h2>
             <div id="timer"></div>
         </section>
+    
+        <section id="parabens1">
 
-        <section id="parabens1" style="display: none;">
-            <h2 class="parabens"> 🎉 Parabéns! 🎉</h2><br>
+            <h2 class="parabens"> 🎉 Meus parabéns vida! 🎉</h2>
 
-            <h3>Menssagem da familia que te ama:</h3>
-
-            <p class="nos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto, odio provident at praesentium, error totam aperiam eligendi eveniet cum nisi ab eos doloribus laborum hic labore, in tempora impedit.</p>
-
-            <p class="parabens">Algumas fotos suas:</p>
-
-
-            <img src="src/imagens/1 (20).jpg" alt="primeiro ensaio" class="nossas-fotos">
-            <img src="src/imagens/1 (21).jpg" alt="dia do pedido" class="nossas-fotos">
-            <img src="src/imagens/1 (22).jpg" alt="primeiro ensaio" class="nossas-fotos">
-            <img src="src/imagens/1 (40).jpg" alt="dia do pedido" class="nossas-fotos">
-            <img src="src/imagens/1 (35).JPG" alt="dia do pedido" class="nossas-fotos">
-            <img src="src/imagens/1 (38).jpg" alt="dia do pedido" class="nossas-fotos">
-            <img src="src/imagens/1 (40).jpg" alt="dia do pedido" class="nossas-fotos"><br>
-
-
-            <p class="parabens">Aqui estão algumas fotos nossas:</p>
-
-            <img src="src/imagens/eu e ela/dia do pedido.JPG" alt="dia do pedido" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/ensaio.JPG" alt="primeiro ensaio" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/casamento tio.jpg" alt="casamento do tio" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/ensaio curso 1.jpg" alt="ensaio curso 1" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/ensaio curso 2.jpg" alt="ensaio 2" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/ensaio curso.jpg" alt="ensaio" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/festa verde.JPG" alt="luz verde" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/foto1.jpg" alt="foto 1" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/foto2.jpg" alt="foto 2" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/fotografos.jpg" alt="fotografos" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/luz roxa.jpg" alt="roxo" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/pre wedding 1.jpg" alt="casa 1" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/pre wedding 2.jpg" alt="casa 2" class="nossas-fotos">
-            <img src="src/imagens/eu e ela/pre wedding.jpg" alt="casa 3" class="nossas-fotos">
-
-            <h1 class="nos">Meus parabéns Vida.</h1>
-            <p class="nos">Querida esposa,
+            <p class="text-parabens">Querida esposa,
 
                 Hoje, o sol brilha mais intensamente, as flores desabrocham com mais beleza e o mundo parece sorrir em comemoração ao seu aniversário. Não é apenas mais um dia no calendário, é uma celebração do amor, da vida e da pessoa incrível que você é.
                 
@@ -81,17 +58,168 @@
                 Com todo o meu amor,
                 
                 Lucas Alves.</p>
+
+            <h2 class="fotos-suas">Algumas fotos suas:</h2>
+
+            <div class="container carrosel">
+                <div class="row">
+                    <div class="col-sm-8 m-auto">
+                        <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target="#carousel-indicadores" data-slide-to="0"></li>
+                                </ol>
+
+                                <div class="carousel-item active">
+                                    <img src="src/image/1 (18).jpg" class="img-fluid">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/1 (20).jpg" class="img-fluid">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/1 (21).jpg" class="img-fluid">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/1 (22).jpg" class="img-fluid">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/1 (35).JPG" class="img-fluid">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/1 (38).jpg" class="img-fluid">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/1 (40).jpg" class="img-fluid">
+                                </div>
+                            </div>
+                            <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+
+                            <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                        <br><br><br>
+
+                        <h2 class="parabens">Aqui estão algumas fotos nossas:</h2>
+
+                        <div id="carousel-legenda" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target="#carousel-legenda" data-slide-to="0"></li>
+                                    <li data-target="#carousel-legenda" data-slide-to="1"></li>
+                                    <li data-target="#carousel-legenda" data-slide-to="2"></li>
+                                </ol>
+                                
+                                <div class="carousel-item active">
+                                    <img src="src/image/eu e ela/casamento tio.jpg" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Você é a melhor coisa em que já me aconteceu</h3>
+                                    </div>
+                                </div>
+            
+                                <div class="carousel-item">
+                                    <img src="src/image/eu e ela/dia do pedido.JPG" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Esse dia foi o dia em que te pedi em namoro.</h3>                    
+                                    </div>
+                                </div>
+            
+                                <div class="carousel-item">
+                                    <img src="src/image/eu e ela/ensaio curso 1.jpg" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Juntos por um sonho</h3>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/eu e ela/ensaio curso.jpg" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Sempre irei te amar</h3>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/eu e ela/ensaio.JPG" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Você é a minha metade</h3>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/eu e ela/foto1.jpg" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>A cada dia que passa amo mais você</h3>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/eu e ela/luz roxa.jpg" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Sempre iluminados</h3>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/eu e ela/pre wedding 1.jpg" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Em um só sentimento</h3>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/eu e ela/pre wedding 2.jpg" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Seu sorriso melhora meus dias</h3>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="src/image/eu e ela/pre wedding.jpg" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Com você tento ser melhor</h3>
+                                    </div>
+                                </div>
+                            
+                                <a href="#carousel-legenda" class="carousel-control-prev" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+            
+                                <a href="#carousel-legenda" class="carousel-control-next" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-
         <p class="nos">Desenvolvido por Lucas Alves
         &copy; 2024 - Todos os direitos reservados. Entre em contato pelo e-mail: lucasalvespdq@hotmail.com ou pelo celular: 11-95423-9701 </p>
-
-
     </footer>
 
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="src/js/script.js"></script>
 </body>
 

@@ -1,0 +1,146 @@
+body {
+    padding-bottom: 80px;
+    background-color: #fbe4d8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #854F6C;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    background-color: #dfb6b2;
+    padding: 30px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #dfb6b2;
+    width: 100%;
+}
+
+footer {
+    background-color: #dfb6b2;
+    color: rgb(2, 0, 0);
+    text-align: center;
+    padding: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+h2, p {
+    color: black;
+}
+
+h3 {
+    color: #854F6C;
+}
+
+#site {
+    text-align: center;
+}
+
+#timer {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#parabens1 {
+    display: none;
+}
+
+.cabecalho-h1 {
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.cabecalho-capa {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.site {
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+.parabens {
+    text-align: center;
+}
+
+.text-parabens {
+    text-align: center;
+    margin: 10px;
+    color: black;
+    font-size: 700;
+} 
+
+.fotos-suas {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    main, footer {
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .cabecalho-h1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .cabecalho-capa img {
+        width: 100%;
+        height: auto;
+    }
+
+    .site, .parabens, .fotos-suas, .text-parabens {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .text-parabens {
+        font-size: 1rem;
+    }
+
+    #timer {
+        font-size: 1.5em;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho-h1 h1 {
+        font-size: 1.2rem;
+    }
+
+    .site h2, .site h3, .parabens, .fotos-suas {
+        font-size: 1rem;
+    }
+
+    .text-parabens {
+        font-size: 0.9rem;
+    }
+
+    #timer {
+        font-size: 1.2em;
+    }
+
+    .carousel-caption h3 {
+        font-size: 0.9rem;
+    }
+}
