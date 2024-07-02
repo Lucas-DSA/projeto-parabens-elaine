@@ -1,5 +1,5 @@
 // Defina a data do próximo aniversário
-const proximoAniversario = new Date("2024-07-24");
+const proximoAniversario = new Date("2024-05-23");
 
 // Função para atualizar o contador regressivo
 function atualizarContador() {

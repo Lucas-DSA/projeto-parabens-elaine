@@ -5,12 +5,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 header {
     background-color: #854F6C;
     width: 100%;
     text-align: center;
+    padding: 20px 0;
 }
 
 main {
@@ -24,6 +27,8 @@ main {
 section {
     background-color: #dfb6b2;
     width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
 footer {
@@ -50,6 +55,7 @@ h3 {
 #timer {
     font-size: 2em;
     margin-bottom: 20px;
+    color: black;
 }
 
 #parabens1 {
@@ -67,6 +73,11 @@ h3 {
     justify-content: center;
 }
 
+.cabecalho-capa img {
+    max-width: 100%;
+    height: auto;
+}
+
 .site {
     text-align: center;
     padding: 30px;
@@ -81,7 +92,8 @@ h3 {
     text-align: center;
     margin: 10px;
     color: black;
-    font-size: 700;
+    font-weight: 700;
+    font-size: 1.5rem;
 } 
 
 .fotos-suas {
@@ -89,8 +101,26 @@ h3 {
     padding: 10px;
 }
 
+.video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+    display: block; /* Garante que o margin: 0 auto funcione */
+}
+
+iframe {
+    max-width: 100%;
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+    display: block; /* Garante que o margin: 0 auto funcione */
+}
+
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
+    body {
+        padding-bottom: 40px;
+    }
+
     main, footer {
         padding: 20px;
         margin: 0 10px;
@@ -98,11 +128,6 @@ h3 {
 
     .cabecalho-h1 h1 {
         font-size: 1.5rem;
-    }
-
-    .cabecalho-capa img {
-        width: 100%;
-        height: auto;
     }
 
     .site, .parabens, .fotos-suas, .text-parabens {
@@ -116,14 +141,24 @@ h3 {
 
     #timer {
         font-size: 1.5em;
+        color: black;
     }
 
     .carousel-caption h3 {
         font-size: 1rem;
     }
+
+    ifrane {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 480px) {
+    body {
+        padding-bottom: 20px;
+    }
+
     .cabecalho-h1 h1 {
         font-size: 1.2rem;
     }
@@ -138,9 +173,15 @@ h3 {
 
     #timer {
         font-size: 1.2em;
+        color: black;
     }
 
     .carousel-caption h3 {
         font-size: 0.9rem;
+    }
+
+    iframe {
+        max-width: 100%;
+        height: auto;
     }
 }
